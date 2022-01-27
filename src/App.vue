@@ -1,7 +1,8 @@
 <template>
   <div id="nav">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">About</router-link> |
+    <router-link to="/experience">Experience</router-link>
   </div>
   <router-view />
 </template>
@@ -25,6 +26,22 @@
     background-color: $pink;
     border-radius: 4px;
     text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: lighten($color: $pink, $amount: 10%);
+    }
+  }
+
+  button {
+    color: white;
+    padding: 10px;
+    background-color: $pink;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
 
     &:hover {
       background-color: lighten($color: $pink, $amount: 10%);
