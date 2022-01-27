@@ -10,6 +10,7 @@
         :year="experience.year"
         :experience="experience.experience"
         :image="experience.image"
+        :background="experience.bg"
       ></experience-card>
     </div>
   </div>

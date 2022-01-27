@@ -47,6 +47,14 @@
       background-color: lighten($color: $pink, $amount: 10%);
     }
   }
+
+  .experience-modal__close {
+  font-weight: 900;
+  border-radius: 50%;
+  margin-bottom: 0;
+  font-size: 14px;
+  padding: 10px 12px;
+}
 }
 
 #nav {

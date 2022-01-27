@@ -1,11 +1,12 @@
 <template>
-  <div class="experience-card" :style="this.backgroundURL">
+  <div class="experience-card" :style="{backgroundImage:`url(${publicPath}${this.background})`}">
     <div class="experience-card__overlay">
       <h3 class="experience-card__company-name">{{ this.companyName }}</h3>
       <p class="experience-card__job-position">{{ this.jobPosition }}</p>
       <p class="experience-card__year">{{ this.year }}</p>
       <button @click="openModal">Read more...</button>
       <experience-modal :openModal="this.modalOpen">
+        <button class="experience-modal__close" @click="closeModal">X</button>
         <p>{{ this.experience }}</p>
         <div class="experience-modal__image">
         <img :src="`${publicPath}${this.image}`">
@@ -33,7 +34,7 @@ export default {
       type: String,
       default: "",
     },
-    backgroundURL: {
+    background: {
       type: String,
       default: "",
     },
@@ -58,6 +59,9 @@ export default {
     openModal() {
       this.modalOpen = true;
     },
+    closeModal(){
+        this.modalOpen = false;
+    }
   },
 };
 </script>
