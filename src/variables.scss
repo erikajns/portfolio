@@ -1,0 +1,14 @@
+/* WEBSITE VARIABLES*/
+//Colors
+$pink: #e4654d;
+
+//Grid breakpoints
+//Define the minimun dimensions at which your layout will change,
+//adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  sm: 0,
+  md: 401px,
+  lg: 901px,
+  xl: 1201px,
+);

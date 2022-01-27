@@ -1,0 +1,35 @@
+.home {
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 100vw;
+  text-align: left;
+  justify-content: center;
+
+  &__image {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, "md")) {
+  .home {
+    &__image {
+      max-width: 350px;
+    }
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, "lg")) {
+  .home {
+      flex-direction: row;
+    &__welcome {
+      flex: 1;
+      margin-right: 50px;
+      max-width: 50%;
+    }
+    &__image {
+      flex: 1;
+      max-width: 40%;
+      margin-top: 10%;
+    }
+  }
+}
