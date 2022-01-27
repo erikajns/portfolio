@@ -4,22 +4,15 @@
       <h3 class="experience-card__company-name">{{ this.companyName }}</h3>
       <p class="experience-card__job-position">{{ this.jobPosition }}</p>
       <p class="experience-card__year">{{ this.year }}</p>
-      <button @click="openModal">Read more...</button>
-      <experience-modal :openModal="this.modalOpen">
-        <button class="experience-modal__close" @click="closeModal">X</button>
-        <p>{{ this.experience }}</p>
-        <div class="experience-modal__image">
-        <img :src="`${publicPath}${this.image}`">
-        </div>
-      </experience-modal>
+
+      <router-link :to="{path: '/experience/about-experience', query: { experience: this.experience, image: this.image, company: this.companyName, position: this.jobPosition}}">Read More...</router-link>
+
     </div>
   </div>
 </template>
 
 <script>
-import ExperienceModal from "../Modal/Experience-Modal.vue";
 export default {
-  components: { ExperienceModal },
   name: "experience-card",
   props: {
     companyName: {
@@ -51,17 +44,8 @@ export default {
   },
   data() {
     return {
-      modalOpen: false,
       publicPath: process.env.BASE_URL,
     };
-  },
-  methods: {
-    openModal() {
-      this.modalOpen = true;
-    },
-    closeModal(){
-        this.modalOpen = false;
-    }
   },
 };
 </script>

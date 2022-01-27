@@ -20,15 +20,17 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-
-    button {
-      max-width: 100px;
-      margin-bottom: 50px;
-    }
+    padding-bottom: 30px;
   }
 }
 
 @media (min-width: map-get($grid-breakpoints, "md")) {
+    .experience-card {
+        width: 300px;
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, "xxl")) {
     .experience-card {
         width: 350px;
     }

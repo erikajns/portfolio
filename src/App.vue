@@ -1,14 +1,24 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/experience">Experience</router-link>
+  <div class="content">
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <!-- <router-link to="/about">About</router-link> |-->
+      <router-link to="/experience">Experience</router-link>
+    </div>
+
+    <router-view v-slot="{ Component }">
+      <transition
+        enter-active-class="animate__animated animate__fadeInLeftBig"
+      >
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </div>
-  <router-view />
 </template>
 
 <style lang="scss">
 @import "variables.scss";
+
 #app {
   font-family: Muli, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -49,12 +59,12 @@
   }
 
   .experience-modal__close {
-  font-weight: 900;
-  border-radius: 50%;
-  margin-bottom: 0;
-  font-size: 14px;
-  padding: 10px 12px;
-}
+    font-weight: 900;
+    border-radius: 50%;
+    margin-bottom: 0;
+    font-size: 14px;
+    padding: 10px 12px;
+  }
 }
 
 #nav {

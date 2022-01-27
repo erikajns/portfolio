@@ -1,5 +1,5 @@
 <template>
-  <div class="experience-title container">
+  <div class="experience-title page container">
     <h1>Experience</h1>
   </div>
   <div class="experience container">
@@ -36,8 +36,17 @@ export default {
 .experience {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 10%;
   align-items: center;
   justify-content: space-around;
+}
+
+@media (min-width: map-get($grid-breakpoints, "xxl")) {
+  .experience {
+    margin-top: 5%;
+  }
+
+  .experience-title {
+    margin-top: 5%;
+  }
 }
 </style>

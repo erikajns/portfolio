@@ -1,13 +1,11 @@
 <template>
-  <div class="about">
-    <modal></modal>
+  <div class="about page">
+    <h1>HERE GOES MY INFO</h1>
   </div>
 </template>
 
 <script>
-import Modal from "../components/Modal/Experience-Modal.vue";
   export default {
-    components: { Modal },
     name: "about-page"
   }
 </script>

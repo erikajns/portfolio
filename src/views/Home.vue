@@ -1,5 +1,5 @@
 <template>
-  <div class="home container">
+  <div class="home container page">
     <div class="home__welcome">
       <h1>HELLO.</h1>
       <h4>I'm Erika Jones</h4>
