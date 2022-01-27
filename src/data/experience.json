@@ -9,7 +9,7 @@
             "Fixed bugs through troubleshooting simple/complex issues and meticulous cross-browser debug, improving the web functionality and overall user experience.",
             "Created and managed new custom, responsive, reusable, and maintainable VueJS web pages and components to craft dynamic websites that guarantee high quality user interface."
         ],
-        "image": "src/assets/images/in-desk.svg"
+        "image": "in-desk.png"
     },
     {
         "company": "RivetLogic Corporation a VariQ company",
@@ -20,7 +20,7 @@
             "Implemented website improvements and new features based on functional and specific requirements  recognized by managers by composing clean and well written code logic to refine existing web pages.",
             "Liaised with the QA team for performing regression, unitary and component manual tests on website pages and components, ensuring outstanding project delivery for the client."
         ],
-        "image": "src/assets/images/with-phone.svg"
+        "image": "with-phone.png"
     },
     {
         "company": "Soluciones Seguras",
@@ -30,7 +30,7 @@
             "Spearheaded the main research carried out and requirement gathering for the future creation of the company's first NOC (Network Operation Center) in Costa Rica within 3 months, effectively delivering a complete report with an extensive analysis.",
             "Developed a working NOC using virtual machines to expose the different use cases and operations of the researched and selected programs and their integration with Checkpoint, the main software used by the company."
         ],
-        "image": "src/assets/images/presenting.svg"
+        "image": "presenting.png"
     },
     {
         "company": "University of Costa Rica",
@@ -44,6 +44,6 @@
             "Liaised with the project sponsor and project manager to identify and recruit the resources with the necessary skills to carry out the main tasks of the project.",
             "Managed the social media and designed several advertisement materials for the project, taking into account the University guidelines and brand book to generate a unified and consistent design."
         ],
-        "image": "src/assets/images/discuss.svg"
+        "image": "discuss.png"
     }
 ]

@@ -8,6 +8,8 @@
         :companyName="experience.company"
         :jobPosition="experience.position"
         :year="experience.year"
+        :experience="experience.experience"
+        :image="experience.image"
       ></experience-card>
     </div>
   </div>

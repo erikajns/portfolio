@@ -1,5 +1,17 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <modal></modal>
   </div>
 </template>
+
+<script>
+import Modal from "../components/Modal/Experience-Modal.vue";
+  export default {
+    components: { Modal },
+    name: "about-page"
+  }
+</script>
+
+<style lang="scss" scoped>
+
+</style>
