@@ -35,6 +35,7 @@
     padding: 10px;
     background-color: $pink;
     border-radius: 4px;
+    font-weight: 900;
     text-decoration: none;
     cursor: pointer;
 

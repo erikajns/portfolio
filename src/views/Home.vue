@@ -14,7 +14,7 @@
       <br>
       You can explore my website or go straight to my experience.</p>
       <br>
-      <a href="#"><b>See Experience</b></a>
+      <router-link to="/experience">See Experience</router-link>
     </div>
 
     <div class="home__image">
