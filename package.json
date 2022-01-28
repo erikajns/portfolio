@@ -9,6 +9,7 @@
     "deploy": "sh deploy.sh"
   },
   "dependencies": {
+    "@egjs/vue-flicking": "^4.5.1",
     "@egjs/vue3-flicking": "^4.5.1",
     "animate.css": "^4.1.1",
     "core-js": "^3.6.5",
