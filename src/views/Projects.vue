@@ -17,7 +17,7 @@
           <p>{{ project.description }}</p>
           <p><b>Next Updates:</b> {{ project.updates }}</p>
           </div>
-          <a class="project-detail__button" :href="project.url">See project</a>
+          <a class="project-detail__button" target="_blank" :href="project.url">See project</a>
         </div>
       </div>
     </Flicking>
@@ -112,12 +112,13 @@ export default {
     flex-direction: row;
     .project-detail {
       flex: 1;
-      max-width: 50%;
+      max-width: 40%;
     }
     .project-image {
       flex: 1;
-      max-width: 40%;
-      margin-top: 10%;
+      max-width: 50%;
+      margin-top: 5%;
+      margin-bottom: 5%;
       margin-right: 50px;
     }
   }
