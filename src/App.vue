@@ -4,7 +4,8 @@
       <router-link to="/">Home</router-link> |
       <!-- <router-link to="/about">About</router-link> |-->
       <router-link to="/experience">Experience</router-link> |
-      <router-link to="/projects">Projects</router-link>
+      <router-link to="/projects">Projects</router-link> |
+      <router-link to="/about-me">About</router-link>
     </div>
 
     <router-view v-slot="{ Component }">
@@ -68,6 +69,9 @@
 }
 
 #nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 30px;
 
   a {
@@ -104,7 +108,7 @@
   color: rgb(141, 141, 141);
 }
 
-.no-margins{
+.no-margins {
   margin: 0;
 }
 </style>
