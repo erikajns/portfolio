@@ -6,14 +6,47 @@
       <p>
         Bilingual Front-End Developer with 5+ years of overall experience
         working within the Computer and Technology, Education, Automobile, and
-        Telecommunications industries. Experienced with long term clients and
-        consultancy projects for enterprise level companies with multicultural
-        expertise with North-American and Asian markets.
+        Telecommunications industries. <br />
+        Equipped with project management skills and a clear understanding of the
+        development and management life cycle as well. Well-served in working remotely
+        with multidisciplinary teams on initiatives with high quality
+        deliverables.
       </p>
-      <p><b>Want to know more?</b>
-      <br>
-      You can explore my website or continue to my about page, so I can share with you more about me!</p>
-      <br>
+      <div class="home__key-knowledge">
+        <h3 class="no-margins">Key Knowledge</h3>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <p>
+                  VueJS, ReactJS, HTML5, CSS3 SASS, Bootstrap, Flexbox, Grid
+                  API, REST API, JSON, Jest, jQuery, ES6
+                </p>
+              </td>
+              <td>
+                <p>
+                  JavaScript, SPA, BEM, NPM, Yarn Accessibility, ARIA,
+                  Responsive and Adaptative Web Design UI, UX
+                </p>
+              </td>
+              <td>
+                <p>
+                  Adobe Photoshop, Illustrator GitHub, JIRA, Confluence SCRUM,
+                  Agile
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        <b>Want to know more?</b>
+        <br />
+        You can explore my website or continue to my about page, so I can share
+        with you more about me!
+      </p>
+      <br />
       <router-link to="/about-me">About Erika</router-link>
     </div>
 
@@ -817,6 +850,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import './../variables.scss';
+@import "./../variables.scss";
 @import "./sass/home.scss";
 </style>
