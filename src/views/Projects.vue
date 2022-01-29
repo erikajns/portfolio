@@ -3,7 +3,7 @@
     <Flicking :options="{ renderOnlyVisible: true }">
       <div
         v-for="(project, index) in projects"
-        class="flicking-panel has-background-primary"
+        class="flicking-panel"
         :key="index"
       >
         <div class="project-image">
@@ -11,7 +11,7 @@
         </div>
         <div class="project-detail">
           <h1>{{ project.title }}</h1>
-          <p class="project-detail__date">Made on: {{ project.date }}</p>
+          <p class="copy-grey">Made on: {{ project.date }}</p>
           <div class="project-detail__description">
           <h3>Description</h3>
           <p>{{ project.description }}</p>
@@ -85,12 +85,6 @@ export default {
   .project-detail {
     h1 {
       margin-bottom: 0;
-    }
-    &__date {
-      margin-bottom: 30px;
-      margin-top: 0;
-      font-size: 14px;
-      color: rgb(141, 141, 141);
     }
 
     &__description {

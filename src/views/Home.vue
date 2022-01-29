@@ -12,9 +12,9 @@
       </p>
       <p><b>Want to know more?</b>
       <br>
-      You can explore my website or go straight to my experience.</p>
+      You can explore my website or continue to my about page, so I can share with you more about me!</p>
       <br>
-      <router-link to="/experience">See Experience</router-link>
+      <router-link to="/about-me">About Erika</router-link>
     </div>
 
     <div class="home__image">

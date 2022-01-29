@@ -8,9 +8,7 @@
     </div>
 
     <router-view v-slot="{ Component }">
-      <transition
-        enter-active-class="animate__animated animate__fadeInLeftBig"
-      >
+      <transition enter-active-class="animate__animated animate__fadeInLeftBig">
         <component :is="Component" />
       </transition>
     </router-view>
@@ -93,5 +91,20 @@
   @media (min-width: map-get($grid-breakpoints, "lg")) {
     margin: 0 100px;
   }
+}
+
+.about-me {
+  margin-top: 0;
+}
+
+.copy-grey {
+  margin-bottom: 30px;
+  margin-top: 0;
+  font-size: 14px;
+  color: rgb(141, 141, 141);
+}
+
+.no-margins{
+  margin: 0;
 }
 </style>
