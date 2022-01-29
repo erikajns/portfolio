@@ -3,7 +3,7 @@
     <Flicking :options="{ renderOnlyVisible: true }">
       <div
         v-for="(project, index) in projects"
-        class="flicking-panel"
+        class="flicking-panel has-background-primary"
         :key="index"
       >
         <div class="project-image">
