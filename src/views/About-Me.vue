@@ -40,7 +40,7 @@
         <p class="no-margins">
           Technology and business savvy and an achiever; I believe in getting
           stuff done but having a good time along the way!<br />
-          I love Frontend development but I aspire in to become in the future an
+          I love Frontend development but I aspire to become in the future an
           exceptional Project Coordinator and eventually Project Manager
           contributing with the fullest of my knowledge.<br /><br />
           In my free time I love to travel and meet new people, places and
