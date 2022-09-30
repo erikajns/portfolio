@@ -30,7 +30,7 @@ export default {
 
 progress {
   -webkit-appearance: none;
-  width: 26rem;
+  width: 50%;
 }
 
 ::-webkit-progress-bar {

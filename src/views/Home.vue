@@ -838,7 +838,7 @@ export default {
   &__name {
     font-family: Bree Serif;
     font-weight: 400;
-    font-size: 5rem;
+    font-size: 3rem;
     margin: 0;
   }
 
@@ -853,8 +853,9 @@ export default {
   padding: 2rem 0;
 
   &__bars {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   &__skill-set {
@@ -866,6 +867,10 @@ export default {
   .home {
     &__image {
       max-width: 350px;
+    }
+
+    &__name {
+      font-size: 4rem;
     }
   }
 }
@@ -884,6 +889,12 @@ export default {
       max-width: 40%;
       margin-top: 10%;
     }
+    &__name {
+      font-size: 5rem;
+    }
+  }
+  .main-skills__bars {
+    flex-direction: inherit;
   }
 }
 </style>

@@ -59,7 +59,7 @@ export default {
     cursor: pointer;
 
     &:hover {
-      background-color: lighten($color: $pink, $amount: 10%);
+      background-color: lighten($color: $main-yellow, $amount: 10%);
     }
   }
 
@@ -74,7 +74,7 @@ export default {
     cursor: pointer;
 
     &:hover {
-      background-color: lighten($color: $pink, $amount: 10%);
+      background-color: lighten($color: $main-yellow, $amount: 10%);
     }
   }
 
@@ -99,11 +99,11 @@ export default {
     background-color: white;
 
     &.router-link-exact-active {
-      color: #e4654d;
+      color: $main-yellow;
     }
     &:hover {
       background-color: white;
-      color: lighten($color: $pink, $amount: 10%);
+      color: lighten($color: $main-yellow, $amount: 10%);
     }
   }
 }
