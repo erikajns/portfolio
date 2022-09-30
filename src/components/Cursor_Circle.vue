@@ -59,6 +59,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./../variables.scss";
+
 .g-cursor {
   &_hide {
     opacity: 0;
@@ -90,7 +92,7 @@ export default {
     pointer-events: none;
     user-select: none;
     border-radius: 100%;
-    background: black;
+    background: $main-yellow;
     z-index: 55555555;
     backface-visibility: hidden;
     will-change: transform;

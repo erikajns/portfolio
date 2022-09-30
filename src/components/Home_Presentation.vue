@@ -15,7 +15,7 @@ import { setTimeout } from 'timers';
       return {
         typeValue: '',
         typeStatus: false,
-        typeArray: ['Frontend Developer.', 'High-quality coder.', 'UI/UX Designer'],
+        typeArray: ['Frontend Developer.', 'High-quality coder.', 'UI/UX Designer.'],
         typingSpeed: 200,
         erasingSpeed: 100,
         newTextDelay: 2000,
@@ -65,6 +65,7 @@ import { setTimeout } from 'timers';
     font-size: 2rem;
     font-weight: 600;
     color: #0000;
+    margin: 0;
     span.typed-text {
       color: #D2B94B;
     }

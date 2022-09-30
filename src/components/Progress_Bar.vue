@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="animate__animated animate__fadeIn">
         <p>{{ label }}</p>
         <progress :value="value" :max="maxValue"></progress>
     </div>
@@ -26,6 +26,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "./../variables.scss";
+
 progress {
   -webkit-appearance: none;
   width: 26rem;
@@ -36,6 +38,6 @@ progress {
 }
 
 ::-webkit-progress-value {
-    background: blueviolet;
+    background: $main-yellow;
 }
 </style>

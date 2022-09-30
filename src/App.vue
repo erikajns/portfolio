@@ -18,42 +18,41 @@
 </template>
 
 <script>
-import CursorCircle from './components/Cursor_Circle.vue'
+import CursorCircle from "./components/Cursor_Circle.vue";
 
 export default {
   components: { CursorCircle },
 };
 </script>
 
-
 <style lang="scss">
 @import "variables.scss";
 
 #app {
   @font-face {
-  font-family: "Bree Serif";
-  font-weight: 400;
-  font-style: normal;
-  font-display: auto;
-  unicode-range: U+000-5FF;
-  src: local("Bree"), url("/fonts/Bree/BreeSerif-Regular.woff") format("woff");
-}
+    font-family: "Bree Serif";
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local("Bree"), url("/fonts/Bree/BreeSerif-Regular.woff") format("woff");
+  }
 
   font-family: Muli, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-
+  cursor: none;
 
   h1 {
-    color: $pink;
+    color: $blue;
   }
 
   a {
     color: white;
     padding: 10px;
-    background-color: $pink;
+    background-color: $blue;
     border-radius: 4px;
     font-weight: 900;
     text-decoration: none;
@@ -67,7 +66,7 @@ export default {
   button {
     color: white;
     padding: 10px;
-    background-color: $pink;
+    background-color: $blue;
     border: none;
     border-radius: 4px;
     outline: none;

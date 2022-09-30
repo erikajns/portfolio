@@ -3,17 +3,7 @@
     <div class="home__welcome">
       <h1 class="home__name">Erika Jones</h1>
       <home-presentation />
-
-      <p>
-        <b>Want to know more?</b>
-        <br />
-        You can explore my website or continue to my about page, so I can share
-        with you more about me!
-      </p>
-      <br />
-      <router-link to="/about-me">About Erika</router-link>
     </div>
-
     <div class="home__image">
       <svg
         viewBox="0 0 766 648"
@@ -805,13 +795,13 @@
       </svg>
     </div>
   </div>
-  <div class="home__main-skills">
+  <div class="main-skills">
     <h2>Main Skills</h2>
-    <div class="home__skill-bars">
+    <div class="main-skills__bars">
       <div
         v-for="(skill, index) in skillsInfo"
         :key="index"
-        class="home__skill-set"
+        class="main-skills__skill-set"
       >
         <progress-bar :label="skill.skill" :value="skill.value"></progress-bar>
       </div>
@@ -843,27 +833,32 @@ export default {
   max-width: 100vw;
   text-align: left;
   justify-content: center;
+  margin-bottom: 3rem;
 
   &__name {
     font-family: Bree Serif;
     font-weight: 400;
-    font-size: 4rem;
+    font-size: 5rem;
     margin: 0;
   }
 
   &__image {
     max-width: 100%;
   }
+}
 
-  &__key-knowledge {
-    margin-top: 30px;
-    h3 {
-      color: $pink;
-    }
-    td {
-      padding: 0 15px 0 0;
-      width: calc(100% / 3);
-    }
+.main-skills {
+  color: white;
+  background-color: $blue;
+  padding: 2rem 0;
+
+  &__bars {
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+  &__skill-set {
+    flex: 0 0 50%;
   }
 }
 
@@ -890,19 +885,5 @@ export default {
       margin-top: 10%;
     }
   }
-}
-
-.home__main-skills {
-  color: white;
-  background-color: $blue;
-  padding: 2rem 0;
-}
-
-.home__skill-bars {
-  display: flex;
-  flex-wrap: wrap;
-}
-.home__skill-set {
-  flex: 0 0 50%;
 }
 </style>
