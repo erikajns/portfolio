@@ -1,44 +1,8 @@
 <template>
   <div class="home container page">
     <div class="home__welcome">
-      <h1>HELLO.</h1>
-      <h4>I'm Erika Jones</h4>
-      <p>
-        Bilingual Front-End Developer with 5+ years of overall experience
-        working within the Computer and Technology, Education, Automobile, and
-        Telecommunications industries. <br />
-        Equipped with project management skills and a clear understanding of the
-        development and management life cycle as well. Well-served in working remotely
-        with multidisciplinary teams on initiatives with high quality
-        deliverables.
-      </p>
-      <div class="home__key-knowledge">
-        <h3 class="no-margins">Key Knowledge</h3>
-        <table>
-          <tbody>
-            <tr>
-              <td>
-                <p>
-                  VueJS, ReactJS, HTML5, CSS3 SASS, Bootstrap, Flexbox, Grid
-                  API, REST API, JSON, Jest, jQuery, ES6
-                </p>
-              </td>
-              <td>
-                <p>
-                  JavaScript, SPA, BEM, NPM, Yarn Accessibility, ARIA,
-                  Responsive and Adaptative Web Design UI, UX
-                </p>
-              </td>
-              <td>
-                <p>
-                  Adobe Photoshop, Illustrator GitHub, JIRA, Confluence SCRUM,
-                  Agile
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <h1 class="home__name">Erika Jones</h1>
+      <home-presentation />
 
       <p>
         <b>Want to know more?</b>
@@ -841,15 +805,104 @@
       </svg>
     </div>
   </div>
+  <div class="home__main-skills">
+    <h2>Main Skills</h2>
+    <div class="home__skill-bars">
+      <div
+        v-for="(skill, index) in skillsInfo"
+        :key="index"
+        class="home__skill-set"
+      >
+        <progress-bar :label="skill.skill" :value="skill.value"></progress-bar>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
+import HomePresentation from "../components/Home_Presentation.vue";
+import ProgressBar from "../components/Progress_Bar.vue";
+import skillsData from "./../data/skills.json";
+
 export default {
   name: "home-page",
+  components: { HomePresentation, ProgressBar },
+  data() {
+    return {
+      skillsInfo: skillsData,
+    };
+  },
 };
 </script>
 
 <style lang="scss">
 @import "./../variables.scss";
-@import "./sass/home.scss";
+.home {
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 100vw;
+  text-align: left;
+  justify-content: center;
+
+  &__name {
+    font-family: Bree Serif;
+    font-weight: 400;
+    font-size: 4rem;
+    margin: 0;
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+
+  &__key-knowledge {
+    margin-top: 30px;
+    h3 {
+      color: $pink;
+    }
+    td {
+      padding: 0 15px 0 0;
+      width: calc(100% / 3);
+    }
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, "md")) {
+  .home {
+    &__image {
+      max-width: 350px;
+    }
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, "lg")) {
+  .home {
+    flex-direction: row;
+    &__welcome {
+      flex: 1;
+      margin-right: 50px;
+      max-width: 50%;
+      margin-top: 10%;
+    }
+    &__image {
+      flex: 1;
+      max-width: 40%;
+      margin-top: 10%;
+    }
+  }
+}
+
+.home__main-skills {
+  color: white;
+  background-color: $blue;
+  padding: 2rem 0;
+}
+
+.home__skill-bars {
+  display: flex;
+  flex-wrap: wrap;
+}
+.home__skill-set {
+  flex: 0 0 50%;
+}
 </style>

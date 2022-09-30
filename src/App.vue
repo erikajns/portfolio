@@ -1,5 +1,6 @@
 <template>
   <div class="content">
+    <cursor-circle />
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <!-- <router-link to="/about">About</router-link> |-->
@@ -16,15 +17,34 @@
   </div>
 </template>
 
+<script>
+import CursorCircle from './components/Cursor_Circle.vue'
+
+export default {
+  components: { CursorCircle },
+};
+</script>
+
+
 <style lang="scss">
 @import "variables.scss";
 
 #app {
+  @font-face {
+  font-family: "Bree Serif";
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+  unicode-range: U+000-5FF;
+  src: local("Bree"), url("/fonts/Bree/BreeSerif-Regular.woff") format("woff");
+}
+
   font-family: Muli, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+
 
   h1 {
     color: $pink;
