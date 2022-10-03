@@ -3,6 +3,18 @@
     <div class="home__welcome">
       <h1 class="home__name">Erika Jones</h1>
       <home-presentation />
+      <p>
+        Dedicated and detailed-oriented professional with a strong Web Developer
+        background rewarded with time management, arranger, analytical,
+        strategic, achiever and empathic skills. Well-served in working remotely
+        with multidisciplinary teams on initiatives with high quality
+        deliverables. <br />
+        <br />
+        <b
+          >Seeking to take on new opportunities to become an exceptional Project
+          Manager contributing with the fullest of my acquired knowledge.</b
+        >
+      </p>
     </div>
     <div class="home__image">
       <svg
@@ -807,19 +819,35 @@
       </div>
     </div>
   </div>
+  <div class="recommendations">
+    <Flicking :options="{ moveType: 'freeScroll', bound: true }">
+      <span v-for="(recommendation, index) in recommendationsInfo" :key="index" class="button mr-2 is-white">
+        <quote-card
+          :name="recommendation.name"
+          :description="recommendation.description"
+          :job="recommendation.job"
+          :company="recommendation.company"
+        ></quote-card>
+      </span>
+    </Flicking>
+  </div>
 </template>
 
 <script>
 import HomePresentation from "../components/Home_Presentation.vue";
 import ProgressBar from "../components/Progress_Bar.vue";
 import skillsData from "./../data/skills.json";
+import recommendationsData from "./../data/recommendations.json";
+import QuoteCard from "../components/Quote_Card.vue";
+import Flicking from "@egjs/vue3-flicking";
 
 export default {
   name: "home-page",
-  components: { HomePresentation, ProgressBar },
+  components: { HomePresentation, ProgressBar, QuoteCard, Flicking },
   data() {
     return {
       skillsInfo: skillsData,
+      recommendationsInfo: recommendationsData,
     };
   },
 };
@@ -882,12 +910,12 @@ export default {
       flex: 1;
       margin-right: 50px;
       max-width: 50%;
-      margin-top: 10%;
+      margin-top: 5%;
     }
     &__image {
       flex: 1;
       max-width: 40%;
-      margin-top: 10%;
+      margin-top: 5%;
     }
     &__name {
       font-size: 5rem;
