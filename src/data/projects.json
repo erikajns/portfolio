@@ -1,11 +1,19 @@
 [
     {
+        "title": "Motores Transitorios",
+        "description": "Dealership website made with wordpress. Wordpress theme implementation and PHP customizations",
+        "date": "October 2nd 2022",
+        "updates": "",
+        "url": "https://motorestransitorios.com",
+        "image": "mt.jpg"
+    },
+    {
         "title": "Weather App",
         "description": "Responsive weather Consulting App that retrieves the weather of the city or country the user search for. Made with a Weather API, SASS and VueJS",
         "date": "January 22nd 2022",
         "updates": "Optimize background images, Add more information from API, Fix narrow mobile view",
         "url": "https://erikajns.github.io/weather-app/",
-        "image": "weather.png"
+        "image": "weather.jpg"
     },
     {
         "title": "To-Do List App",
@@ -13,7 +21,6 @@
         "date": "January 23rd 2022",
         "updates": "Add edit task feature, Fix empty task added",
         "url": "https://erikajns.github.io/todo-app/",
-        "image": "todo-app.png"
+        "image": "todo-app.jpg"
     }
-
 ]

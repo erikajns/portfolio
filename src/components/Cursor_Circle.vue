@@ -18,7 +18,7 @@ export default {
   name: "cursor-circle",
   data() {
     return {
-        xChild: 0,
+    xChild: 0,
     yChild: 0,
     xParent: 0,
     yParent: 0,

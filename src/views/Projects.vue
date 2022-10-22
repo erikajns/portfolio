@@ -1,9 +1,9 @@
 <template>
-  <div class="wrapper">
-    <Flicking :options="{ renderOnlyVisible: true }">
+  <div class="wrapper project-wrapper">
+    <h2 class="project-wrapper__title"> Recent Projects</h2>
       <div
         v-for="(project, index) in projects"
-        class="flicking-panel has-background-primary"
+        class="project-panel"
         :key="index"
       >
         <div class="project-image">
@@ -11,28 +11,22 @@
         </div>
         <div class="project-detail">
           <h1>{{ project.title }}</h1>
-          <p class="copy-grey">Made on: {{ project.date }}</p>
           <div class="project-detail__description">
           <h3>Description</h3>
           <p>{{ project.description }}</p>
-          <p><b>Next Updates:</b> {{ project.updates }}</p>
+          <p class="copy-grey" v-if="project.updates !== ''"><b>Next Updates:</b> {{ project.updates }}</p>
           </div>
           <a class="project-detail__button" target="_blank" :href="project.url">See project</a>
         </div>
       </div>
-    </Flicking>
   </div>
 </template>
 
 <script>
-import Flicking from "@egjs/vue3-flicking";
 import projectData from "./../data/projects.json";
 
 export default {
   name: "projects-page",
-  components: {
-    Flicking: Flicking,
-  },
   data() {
     return {
       projects: projectData,
@@ -46,33 +40,28 @@ export default {
 @import "./../variables.scss";
 @import url("./../../node_modules/@egjs/vue-flicking/dist/flicking.css");
 
-.flicking-index {
-  min-width: 60px;
-  position: relative;
-  text-align: center;
+.project-wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $blue;
+
+    &__title{
+      color: white;
+    }
 }
 
-.flicking-camera {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  z-index: 1;
-}
-
-.flicking-panel {
+.project-panel {
   display: flex;
   flex-direction: column;
-  max-width: 90vw;
+  max-width: 70vw;
   text-align: left;
   justify-content: center;
-  border: 4px dotted $pink;
-  border-radius: 5px;
+  border-radius: 2px;
   box-sizing: border-box;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  padding: 30px 20px;
+  background-color: white;
+  margin:  2rem 0;
 
   .project-image {
     max-width: 100%;
@@ -83,37 +72,29 @@ export default {
   }
 
   .project-detail {
+    padding: 2rem;
     h1 {
-      margin-bottom: 0;
+      margin: 0;
     }
-
-    &__description {
-      margin-bottom: 65px;
-    }
-  }
-}
-
-@media (min-width: map-get($grid-breakpoints, "md")) {
-  .flicking-panel {
-    .project-image {
-      max-width: 350px;
+    h3 {
+      margin: 0.5rem 0;
     }
   }
 }
+
 
 @media (min-width: map-get($grid-breakpoints, "lg")) {
-  .flicking-panel {
+  .project-panel{
     flex-direction: row;
     .project-detail {
       flex: 1;
       max-width: 40%;
+      margin-left: 2rem;
     }
     .project-image {
       flex: 1;
-      max-width: 50%;
-      margin-top: 5%;
-      margin-bottom: 5%;
-      margin-right: 50px;
+      display: flex;
+      align-items: center;
     }
   }
 }

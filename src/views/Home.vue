@@ -820,16 +820,17 @@
     </div>
   </div>
   <div class="recommendations">
-    <Flicking :options="{ moveType: 'freeScroll', bound: true }">
-      <span v-for="(recommendation, index) in recommendationsInfo" :key="index" class="button mr-2 is-white">
-        <quote-card
-          :name="recommendation.name"
-          :description="recommendation.description"
-          :job="recommendation.job"
-          :company="recommendation.company"
-        ></quote-card>
-      </span>
-    </Flicking>
+    <h2> What my peers say about me?</h2>
+    <div class="recommendations__cards">
+    <quote-card 
+      v-for="(recommendation, index) in recommendationsInfo" 
+      :key="index" 
+      :name="recommendation.name"
+      :description="recommendation.description"
+      :job="recommendation.job"
+      :company="recommendation.company"
+    ></quote-card>
+    </div>
   </div>
 </template>
 
@@ -839,11 +840,10 @@ import ProgressBar from "../components/Progress_Bar.vue";
 import skillsData from "./../data/skills.json";
 import recommendationsData from "./../data/recommendations.json";
 import QuoteCard from "../components/Quote_Card.vue";
-import Flicking from "@egjs/vue3-flicking";
 
 export default {
   name: "home-page",
-  components: { HomePresentation, ProgressBar, QuoteCard, Flicking },
+  components: { HomePresentation, ProgressBar, QuoteCard },
   data() {
     return {
       skillsInfo: skillsData,
@@ -891,6 +891,24 @@ export default {
   }
 }
 
+.recommendations {
+  display: flex;
+  flex-direction: column;
+
+  &__cards{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+}
+
+.quote-card{
+  width: 200rem;
+  margin: 1rem;
+  padding: 2rem;
+
+}
+
 @media (min-width: map-get($grid-breakpoints, "md")) {
   .home {
     &__image {
@@ -923,6 +941,11 @@ export default {
   }
   .main-skills__bars {
     flex-direction: inherit;
+  }
+
+  .recommendations__cards{
+    display: flex;
+    flex-direction: row;
   }
 }
 </style>
