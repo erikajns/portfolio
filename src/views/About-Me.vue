@@ -20,11 +20,13 @@
         </p>
         <div class="about-me__buttons">
           <a
+            target="_blank"
             id="about-me__button"
             href="https://drive.google.com/drive/folders/1OvxS2ue6fDZoO5sDzycT5q1n-MW20w3H?usp=sharing"
             >See Professional Certificates</a
           >
           <a
+            target="_blank"
             :href="`${publicPath}Erika_Jones_Resume_Dev_102022.pdf`"
             download="Erika-Jones_Resume"
             >Download Current CV</a
@@ -84,17 +86,21 @@
       <div class="contact-form__info-contact">
         <div>
           <font-awesome-icon :icon="['fas', 'phone']" />
-          Phone (+506) 8711-5083
+          Phone: (+506) 8711-5083
         </div>
         <div>
           <font-awesome-icon :icon="['fas', 'location-dot']" />
-          Current address Santa Ana, Costa Rica.
+          Current address: Santa Ana, Costa Rica.
         </div>
       </div>
       <hr />
       <div class="contact-form__info-rrss">
         <div>
-          <a class="no-background" href="www.linkedin.com/in/erikajns">
+          <a
+            class="no-background"
+            href="https://linkedin.com/in/erikajns"
+            target="_blank"
+          >
             <font-awesome-icon :icon="['fab', 'linkedin-in']" />
             LinkedIn
           </a>
@@ -103,11 +109,23 @@
           <a
             class="no-background"
             href="https://github.com/erikajns?tab=repositories"
+            target="_blank"
           >
             <font-awesome-icon :icon="['fab', 'github']" />
             Github
           </a>
         </div>
+        <div>
+          <a
+            class="no-background"
+            :href="`mailto:${myMail}`"
+            target="_blank"
+          >
+            <font-awesome-icon :icon="['fas', 'envelope']" />
+            Email Job opportunities
+          </a>
+        </div>
+
       </div>
       <hr />
     </div>
