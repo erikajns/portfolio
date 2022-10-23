@@ -87,11 +87,33 @@
       </div>
     </div>
     </div>
-    <div class="about-me__contact-form">FORM</div>
+    <div class="about-me__contact-form">
+      <div class="contact-form__info">
+        <h4>GET IN TOUCH</h4>
+        <h2>Let's Work Together!</h2>
+        <div class="contact-form__info-contact">
+          <div>
+            Phone
+            (+506) 8711-5083
+          </div>
+          <div>
+            Current address
+            Santa Ana, Costa Rica.
+          </div>
+        </div>
+        <hr>
+        Social Media
+        <hr>
+      </div>
+      <contact-form></contact-form>
+    </div>
 </template>
 
 <script>
-export default {
+import ContactForm from "../components/Contact_Form.vue";
+
+export default 
+  {
   name: "about-page",
   data() {
     return {
@@ -99,6 +121,7 @@ export default {
       myMail: 'erika.jns@hotmail.com',
     };
   },
+  components: { ContactForm },
 };
 </script>
 
@@ -129,6 +152,23 @@ export default {
 
   &__contact-form {
     background-color: $blue;
+    padding: 3rem;
+    text-align: left;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      font-size: 3.2rem;
+          margin: 0;
+          font-family: Bree Serif;
+          font-weight: 400;
+    }
+
+    .contact-form__info{
+      margin: 2rem 0;
+    }
   }
 
   &__philosophy{
@@ -228,6 +268,15 @@ export default {
     }
     }
      
+  }
+
+  &__contact-form {
+    flex-direction: row;
+
+    .contact-form__info{
+      margin: 0 2rem;
+          width: calc(70vw/2);
+    }
   }
 
   }

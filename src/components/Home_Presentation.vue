@@ -61,6 +61,8 @@ import { setTimeout } from 'timers';
 </script>
 
 <style lang="scss" scoped>
+@import "./../variables.scss";
+
   h1 {
     font-size: 2rem;
     font-weight: 600;
@@ -73,16 +75,16 @@ import { setTimeout } from 'timers';
       display: inline-block;
       margin-left: 3px;
       width: 4px;
-      background-color: black;
+      background-color: $blue;
       animation: cursorBlink 1s infinite;
     }
     span.cursor.typing {
-      background-color: black;
+      background-color: $blue;
       animation: cursorBlink 1s infinite;
     }
   }
   @keyframes cursorBlink {
-    49% { background-color: black; }
+    49% { background-color: $blue; }
     50% { background-color: transparent; }
     99% { background-color: transparent; }
   }
