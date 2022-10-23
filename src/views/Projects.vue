@@ -1,24 +1,28 @@
 <template>
   <div class="wrapper project-wrapper">
-    <h2 class="project-wrapper__title"> Recent Projects</h2>
-      <div
-        v-for="(project, index) in projects"
-        class="project-panel"
-        :key="index"
-      >
-        <div class="project-image">
-          <img :src="`${publicPath}${project.image}`" />
-        </div>
-        <div class="project-detail">
-          <h1>{{ project.title }}</h1>
-          <div class="project-detail__description">
+    <h2 class="project-wrapper__title">Recent Projects</h2>
+    <div
+      v-for="(project, index) in projects"
+      class="project-panel"
+      :key="index"
+    >
+      <div class="project-image">
+        <img :src="`${publicPath}${project.image}`" />
+      </div>
+      <div class="project-detail">
+        <h1>{{ project.title }}</h1>
+        <div class="project-detail__description">
           <h3>Description</h3>
           <p>{{ project.description }}</p>
-          <p class="copy-grey" v-if="project.updates !== ''"><b>Next Updates:</b> {{ project.updates }}</p>
-          </div>
-          <a class="project-detail__button" target="_blank" :href="project.url">See project</a>
+          <p class="copy-grey" v-if="project.updates !== ''">
+            <b>Next Updates:</b> {{ project.updates }}
+          </p>
         </div>
+        <a class="project-detail__button" target="_blank" :href="project.url"
+          >See project</a
+        >
       </div>
+    </div>
   </div>
 </template>
 
@@ -40,15 +44,15 @@ export default {
 @import "./../variables.scss";
 
 .project-wrapper {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: $blue;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $blue;
 
-    &__title{
-      color: white;
-    }
+  &__title {
+    color: white;
+  }
 }
 
 .project-panel {
@@ -60,7 +64,7 @@ export default {
   border-radius: 2px;
   box-sizing: border-box;
   background-color: white;
-  margin:  2rem 0;
+  margin: 2rem 0;
 
   .project-image {
     max-width: 100%;
@@ -81,9 +85,8 @@ export default {
   }
 }
 
-
 @media (min-width: map-get($grid-breakpoints, "lg")) {
-  .project-panel{
+  .project-panel {
     flex-direction: row;
     .project-detail {
       flex: 1;

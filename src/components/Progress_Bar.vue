@@ -1,28 +1,28 @@
 <template>
-    <div class="animate__animated animate__fadeIn">
-        <p>{{ label }}</p>
-        <progress :value="value" :max="maxValue"></progress>
-    </div>
+  <div class="animate__animated animate__fadeIn">
+    <p>{{ label }}</p>
+    <progress :value="value" :max="maxValue"></progress>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'progress-bar',
-    props: {
-        value: {
-            type: Number,
-            default: 10 
-        },
-        maxValue: {
-            type: Number,
-            default: 100 
-        },
-        label: {
-            type: String,
-            default: '' 
-        },
+  name: "progress-bar",
+  props: {
+    value: {
+      type: Number,
+      default: 10,
     },
-}
+    maxValue: {
+      type: Number,
+      default: 100,
+    },
+    label: {
+      type: String,
+      default: "",
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -34,10 +34,10 @@ progress {
 }
 
 ::-webkit-progress-bar {
-  background-color: rgba(255,255,255,0.09)!important;;
+  background-color: rgba(255, 255, 255, 0.09) !important;
 }
 
 ::-webkit-progress-value {
-    background: $main-yellow;
+  background: $main-yellow;
 }
 </style>

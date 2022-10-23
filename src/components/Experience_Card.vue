@@ -1,12 +1,25 @@
 <template>
-  <div class="experience-card" :style="{backgroundImage:`url(${publicPath}${this.background})`}">
+  <div
+    class="experience-card animate__animated animate__fadeIn"
+    :style="{ backgroundImage: `url(${publicPath}${this.background})` }"
+  >
     <div class="experience-card__overlay">
       <h3 class="experience-card__company-name">{{ this.companyName }}</h3>
       <p class="experience-card__job-position">{{ this.jobPosition }}</p>
       <p class="experience-card__year">{{ this.year }}</p>
 
-      <router-link :to="{path: '/experience/about-experience', query: { experience: this.experience, image: this.image, company: this.companyName, position: this.jobPosition}}">Read More...</router-link>
-
+      <router-link
+        :to="{
+          path: '/experience/about-experience',
+          query: {
+            experience: this.experience,
+            image: this.image,
+            company: this.companyName,
+            position: this.jobPosition,
+          },
+        }"
+        >Read More...</router-link
+      >
     </div>
   </div>
 </template>
@@ -80,15 +93,14 @@ export default {
 }
 
 @media (min-width: map-get($grid-breakpoints, "md")) {
-    .experience-card {
-        width: 300px;
-    }
+  .experience-card {
+    width: 300px;
   }
+}
 
-  @media (min-width: map-get($grid-breakpoints, "xxl")) {
-    .experience-card {
-        width: 350px;
-    }
+@media (min-width: map-get($grid-breakpoints, "xxl")) {
+  .experience-card {
+    width: 350px;
   }
-
+}
 </style>

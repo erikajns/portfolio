@@ -1,12 +1,18 @@
 <template>
   <div class="quote-card">
-    <font-awesome-icon class='fas fa-quote-left fa2' :icon="['fas', 'quote-left']" />
+    <font-awesome-icon
+      class="fas fa-quote-left fa2"
+      :icon="['fas', 'quote-left']"
+    />
     <div class="text">
-      <font-awesome-icon class='fas fa-quote-right fa1' :icon="['fas', 'quote-left']" />
+      <font-awesome-icon
+        class="fas fa-quote-right fa1"
+        :icon="['fas', 'quote-left']"
+      />
       <div>
         <p class="quote-card__description">{{ description }}</p>
         <h3 class="quote-card__name">{{ name }}</h3>
-       <p class="quote-card__job copy-grey">{{ job }} at {{ company }}</p>
+        <p class="quote-card__job copy-grey">{{ job }} at {{ company }}</p>
       </div>
     </div>
   </div>
@@ -51,24 +57,22 @@ export default {
   background-color: transparent;
   border-radius: 3px;
   color: #fff;
-      width: 300px;
-    height: 365px;
+  width: 300px;
+  height: 365px;
   transform-style: preserve-3d;
   perspective: 2000px;
-  transition: .4s;
+  transition: 0.4s;
   text-align: center;
   margin: 3rem 0;
-
   &__name {
-margin-top: 1rem;
-font-size: 1rem;
-}
-
-&__description{
-  color: $blue;
-}
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  &__description {
+    color: $blue;
+  }
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -80,7 +84,7 @@ font-size: 1rem;
     box-sizing: border-box;
   }
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -111,7 +115,7 @@ font-size: 1rem;
     height: calc(100% - 60px);
     background-color: #ccc;
     border-radius: 3px;
-    transition: .4s;
+    transition: 0.4s;
     .fa1 {
       position: absolute;
       top: 0;
@@ -134,17 +138,16 @@ font-size: 1rem;
   }
   &:hover {
     .text {
-      transform: rotateY(20deg) skewY(-3deg)
+      transform: rotateY(20deg) skewY(-3deg);
     }
-    transform: rotateY(-20deg) skewY(3deg)
+    transform: rotateY(-20deg) skewY(3deg);
   }
 }
 @media (min-width: map-get($grid-breakpoints, "lg")) {
-  .quote-card{
-margin: 0 3rem;
- width: 350px;
-  height: 300px;
-
+  .quote-card {
+    margin: 0 3rem;
+    width: 350px;
+    height: 300px;
   }
 }
 </style>

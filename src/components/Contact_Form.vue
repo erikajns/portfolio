@@ -13,6 +13,9 @@ import emailjs from "@emailjs/browser";
 export default {
   name: "contact-form",
   methods: {
+    /**
+     * Function that connects to EmailJS and send the form data on submit
+     */
     sendEmail() {
       emailjs
         .sendForm(
@@ -44,6 +47,7 @@ form {
   background-color: white;
   color: $blue;
   align-items: center;
+
   input,
   textarea {
     font-family: Muli, sans-serif;

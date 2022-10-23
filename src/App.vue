@@ -1,6 +1,5 @@
 <template>
   <div class="content">
-    <cursor-circle />
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <!-- <router-link to="/about">About</router-link> |-->
@@ -16,14 +15,6 @@
     </router-view>
   </div>
 </template>
-
-<script>
-import CursorCircle from "./components/Cursor_Circle.vue";
-
-export default {
-  components: { CursorCircle },
-};
-</script>
 
 <style lang="scss">
 @import "variables.scss";
@@ -43,7 +34,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  cursor: none;
 
   h1 {
     color: $blue;
