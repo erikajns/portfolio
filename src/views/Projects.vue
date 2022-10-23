@@ -3,7 +3,7 @@
     <h2 class="project-wrapper__title">Recent Projects</h2>
     <div
       v-for="(project, index) in projects"
-      class="project-panel"
+      class="project-panel animate__animated animate__fadeIn"
       :key="index"
     >
       <div class="project-image">

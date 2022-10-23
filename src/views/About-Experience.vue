@@ -1,10 +1,10 @@
 <template>
-  <div class="about-more page container">
+  <div class="about-more page container animate__animated animate__fadeInLeftBig">
     <div class="about-more__experience-detail">
       <h1>{{ this.companyName }}</h1>
       <h3>{{ this.jobTitle }}</h3>
       <div v-for="(experience, index) in experienceInfo" :key="index">
-        <p>{{ experience }}</p>
+        <p><font-awesome-icon class="icon" :icon="['fas', 'code-commit']" /> {{ experience }}</p>
       </div>
       <router-link to="/experience">Back</router-link>
     </div>
@@ -45,6 +45,14 @@ export default {
       width: 100%;
     }
   }
+
+  .icon{
+    color: $main-yellow;
+  }
+
+  h1 {
+      font-family: Bree Serif;
+    }
 }
 
 @media (min-width: map-get($grid-breakpoints, "md")) {

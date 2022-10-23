@@ -18,7 +18,7 @@
             position: this.jobPosition,
           },
         }"
-        >Read More...</router-link
+        >Read More</router-link
       >
     </div>
   </div>
