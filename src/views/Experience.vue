@@ -18,14 +18,14 @@
 
 <script>
 import ExperienceCard from "../components/Experience_Card.vue";
-import experienceData from "./../data/experience.json";
+import data from "./../data/data.json";
 
 export default {
   components: { ExperienceCard },
   name: "experience-page",
   data() {
     return {
-      experienceInfo: experienceData,
+      experienceInfo: data.Experience,
     };
   },
 };

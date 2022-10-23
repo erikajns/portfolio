@@ -1,0 +1,135 @@
+{
+    "Skills": [
+        {
+            "skill": "VueJS",
+            "value": "75"
+        },
+        {
+            "skill": "Javascript",
+            "value": "80"
+        },
+        {
+            "skill": "UI-UX",
+            "value": "50"
+        },
+        {
+            "skill": "CSS/SASS",
+            "value": "75"
+        },
+        {
+            "skill": "Responsive Development",
+            "value": "90"
+        },
+        {
+            "skill": "Office 365",
+            "value": "60"
+        },
+        {
+            "skill": "Project Management",
+            "value": "40"
+        },
+        {
+            "skill": "Adobe Cloud",
+            "value": "80"
+        }
+    ],
+    "Experience": [
+        {
+            "company": "Accenture Corporation",
+            "position": "Web Developer Analyst | Consultant",
+            "year": "Nov.2020 - present",
+            "experience": [
+                "Developed an interactive website redesign with a global team, for one of the key players in the automobile fortune 500 companies, in order to improve KPI conversion, evolve KPIs based on relevancy and improve customer satisfaction rates.",
+                "Work along complex large enterprise clients and multidisciplinary teams within an agile environment utilizing best code practices to develop and test web-based applications and edit site content for various components using Adobe Experience Manager.",
+                "Fixed bugs through troubleshooting simple/complex issues and meticulous cross-browser debug, improving the web functionality and overall user experience.",
+                "Created and managed new custom, responsive, reusable, and maintainable VueJS web pages and components to craft dynamic websites that guarantee high quality user interface."
+            ],
+            "image": "in-desk-zoom.png",
+            "bg": "accenture-logo.jpeg"
+        },
+        {
+            "company": "RivetLogic/Capgemini",
+            "position": "Front-End Software Engineer",
+            "year": "Jan.2019 - Nov.2020",
+            "experience": [
+                "As the only Front-end developer in a team of 5, collaborated on the creation of the first global web-app made with Liferay Commerce CMS for a large telecommunications company facilitating B2B products purchases through an exceptional user-friendliness portal to increase the client’s sales revenue within 6months.",
+                "Implemented website improvements and new features based on functional and specific requirements  recognized by managers by composing clean and well written code logic to refine existing web pages.",
+                "Liaised with the QA team for performing regression, unitary and component manual tests on website pages and components, ensuring outstanding project delivery for the client."
+            ],
+            "image": "with-phone.png",
+            "bg": "rivet-bg.jpeg"
+        },
+        {
+            "company": "Soluciones Seguras",
+            "position": "Software Engineer Consultant",
+            "year": "Aug.2018 - Dic.2018",
+            "experience": [
+                "Spearheaded the main research carried out and requirement gathering for the future creation of the company's first NOC (Network Operation Center) in Costa Rica within 3 months, effectively delivering a complete report with an extensive analysis.",
+                "Developed a working NOC using virtual machines to expose the different use cases and operations of the researched and selected programs and their integration with Checkpoint, the main software used by the company."
+            ],
+            "image": "presenting.png",
+            "bg": "ss-bg.jpeg"
+        },
+        {
+            "company": "University of Costa Rica",
+            "position": "Software and Design Project Coordinator",
+            "year": "Mar.2016 - May 2019",
+            "experience": [
+                "Established efficient workflow processes for the enrollment and training protocols to improve overall assistants performance.",
+                "Communicated with all stakeholders on a daily basis regarding project details, including updates, budget, estimates and timeline.",
+                "Established and maintained effective working relationships with governmental entities and suppliers to maximize the correct development of the project.",
+                "Successfully achieved the enrollment of 100+ people for the project within 3 weeks after the official announcement.",
+                "Liaised with the project sponsor and project manager to identify and recruit the resources with the necessary skills to carry out the main tasks of the project.",
+                "Managed the social media and designed several advertisement materials for the project, taking into account the University guidelines and brand book to generate a unified and consistent design."
+            ],
+            "image": "discuss.png",
+            "bg": "ucr-bg.jpeg"
+        }
+    ],
+    "Projects": [
+        {
+            "title": "Motores Transitorios",
+            "description": "Dealership website made with wordpress. Wordpress theme implementation and PHP customizations",
+            "date": "October 2nd 2022",
+            "updates": "",
+            "url": "https://motorestransitorios.com",
+            "image": "mt.jpg"
+        },
+        {
+            "title": "Weather App",
+            "description": "Responsive weather Consulting App that retrieves the weather of the city or country the user search for. Made with a Weather API, SASS and VueJS",
+            "date": "January 22nd 2022",
+            "updates": "Optimize background images, Add more information from API, Fix narrow mobile view",
+            "url": "https://erikajns.github.io/weather-app/",
+            "image": "weather.jpg"
+        },
+        {
+            "title": "To-Do List App",
+            "description": "Simple and responsive To-Do list app where the user can add, read, delete and mark tasks as done, in progress or to-do. Made with VueJS and SASS.",
+            "date": "January 23rd 2022",
+            "updates": "Add edit task feature, Fix empty task added",
+            "url": "https://erikajns.github.io/todo-app/",
+            "image": "todo-app.jpg"
+        }
+    ],
+    "Recomendations": [
+        {
+            "name": "Josué Somarribas",
+            "description": "With Erika, there is no company or team that can go wrong. Definetly she is someone I admire and highly recommend.",
+            "job": "UI/UX Designer",
+            "company": "First Factory"
+        },
+        {
+            "name": "Francisco Cruz",
+            "description": "She is just too good of a teammate and professional, but she's also growing non-stop, which is really impressive. I would trust her with any development or project management position, her responsibility and communication skills are admirable.",
+            "job": "Web Developer",
+            "company": "Accenture"
+        },
+        {
+            "name": "Pedro Matarrita Brenes",
+            "description": "She's one of the more knowledgeable Front End developers I've had the pleasure to work with. If your looking for someone with technical knowledge and leadership qualities I would 100% recommend Erika.",
+            "job": "Web Developer",
+            "company": "Accenture"
+        }
+    ]
+}

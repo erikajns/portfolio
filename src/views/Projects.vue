@@ -27,13 +27,13 @@
 </template>
 
 <script>
-import projectData from "./../data/projects.json";
+import data from "./../data/data.json";
 
 export default {
   name: "projects-page",
   data() {
     return {
-      projects: projectData,
+      projects: data.Projects,
       publicPath: process.env.BASE_URL,
     };
   },

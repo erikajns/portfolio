@@ -833,8 +833,7 @@
 <script>
 import HomePresentation from "../components/Home_Presentation.vue";
 import ProgressBar from "../components/Progress_Bar.vue";
-import skillsData from "./../data/skills.json";
-import recommendationsData from "./../data/recommendations.json";
+import data from "./../data/data.json";
 import QuoteCard from "../components/Quote_Card.vue";
 
 export default {
@@ -842,8 +841,8 @@ export default {
   components: { HomePresentation, ProgressBar, QuoteCard },
   data() {
     return {
-      skillsInfo: skillsData,
-      recommendationsInfo: recommendationsData,
+      skillsInfo: data.Skills,
+      recommendationsInfo: data.Recomendations,
     };
   },
 };
