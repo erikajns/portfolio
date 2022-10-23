@@ -15,7 +15,7 @@ import { setTimeout } from 'timers';
       return {
         typeValue: '',
         typeStatus: false,
-        typeArray: ['Frontend Developer.', 'High-quality coder.', 'UI/UX Designer.'],
+        typeArray: ['Frontend Developer.', 'Aspiring Project Manager.', 'UI/UX Designer.'],
         typingSpeed: 200,
         erasingSpeed: 100,
         newTextDelay: 2000,

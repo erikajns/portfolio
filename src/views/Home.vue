@@ -10,10 +10,6 @@
         with multidisciplinary teams on initiatives with high quality
         deliverables. <br />
         <br />
-        <b
-          >Seeking to take on new opportunities to become an exceptional Project
-          Manager contributing with the fullest of my acquired knowledge.</b
-        >
       </p>
     </div>
     <div class="home__image">
@@ -820,16 +816,16 @@
     </div>
   </div>
   <div class="recommendations">
-    <h2> What my peers say about me?</h2>
+    <h2>What my peers say about me?</h2>
     <div class="recommendations__cards">
-    <quote-card 
-      v-for="(recommendation, index) in recommendationsInfo" 
-      :key="index" 
-      :name="recommendation.name"
-      :description="recommendation.description"
-      :job="recommendation.job"
-      :company="recommendation.company"
-    ></quote-card>
+      <quote-card
+        v-for="(recommendation, index) in recommendationsInfo"
+        :key="index"
+        :name="recommendation.name"
+        :description="recommendation.description"
+        :job="recommendation.job"
+        :company="recommendation.company"
+      ></quote-card>
     </div>
   </div>
 </template>
@@ -895,18 +891,17 @@ export default {
   display: flex;
   flex-direction: column;
 
-  &__cards{
+  &__cards {
     display: flex;
     flex-direction: column;
-    margin-bottom: 5rem;
+    margin: 0 auto;
   }
 }
 
-.quote-card{
-  width: 200rem;
+.quote-card {
+  max-width: 100vw;
   margin: 1rem;
   padding: 2rem;
-
 }
 
 @media (min-width: map-get($grid-breakpoints, "md")) {
@@ -943,9 +938,10 @@ export default {
     flex-direction: inherit;
   }
 
-  .recommendations__cards{
-    display: flex;
+  .recommendations__cards {
     flex-direction: row;
+    margin: 0 auto 2rem;
+    margin-bottom: 3rem;
   }
 }
 </style>

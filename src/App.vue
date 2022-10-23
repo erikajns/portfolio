@@ -63,6 +63,10 @@ export default {
     }
   }
 
+  a.no-background{
+    background-color: transparent;
+  }
+
   button {
     color: white;
     padding: 10px;

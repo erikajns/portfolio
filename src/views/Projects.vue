@@ -38,7 +38,6 @@ export default {
 
 <style lang="scss">
 @import "./../variables.scss";
-@import url("./../../node_modules/@egjs/vue-flicking/dist/flicking.css");
 
 .project-wrapper {
     margin: 0 auto;
