@@ -58,7 +58,7 @@ export default {
 @media (min-width: map-get($grid-breakpoints, "md")) {
   .about-more {
     &__experience-image {
-      max-width: 350px;
+      max-width: 21.875rem;
     }
   }
 }
@@ -68,7 +68,7 @@ export default {
     flex-direction: row;
     &__experience-detail {
       flex: 1;
-      margin-right: 50px;
+      margin-right: 3.125rem;
       max-width: 50%;
     }
     &__experience-image {

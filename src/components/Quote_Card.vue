@@ -55,12 +55,12 @@ export default {
 
 .quote-card {
   background-color: transparent;
-  border-radius: 3px;
+  border-radius: 0.188rem;
   color: #fff;
-  width: 300px;
-  height: 365px;
+  width: 18.75rem;
+  height: 22.813rem;
   transform-style: preserve-3d;
-  perspective: 2000px;
+  perspective: 125rem;
   transition: 0.4s;
   text-align: center;
   margin: 3rem 0;
@@ -79,8 +79,8 @@ export default {
     width: 100%;
     height: 100%;
     background: transparent;
-    border-top: 20px solid $blue;
-    border-left: 20px solid $blue;
+    border-top: 1.25rem solid $blue;
+    border-left: 1.25rem solid $blue;
     box-sizing: border-box;
   }
   &:after {
@@ -90,14 +90,14 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    border-bottom: 20px solid $blue;
-    border-right: 20px solid $blue;
+    border-bottom: 1.25rem solid $blue;
+    border-right: 1.25rem solid $blue;
     box-sizing: border-box;
   }
   .fas {
-    font-size: 20px;
-    height: 40px;
-    width: 40px;
+    font-size: 1.25rem;
+    height: 2.5rem;
+    width: 2.5rem;
     background-color: $blue;
     color: $main-yellow;
   }
@@ -109,12 +109,12 @@ export default {
   }
   .text {
     position: absolute;
-    top: 30px;
-    left: -30px;
-    width: calc(100% + 60px);
-    height: calc(100% - 60px);
+    top: 1.875rem;
+    left: -1.875rem;
+    width: calc(100% + 3.75rem);
+    height: calc(100% - 3.75rem);
     background-color: #ccc;
-    border-radius: 3px;
+    border-radius: 0.188rem;
     transition: 0.4s;
     .fa1 {
       position: absolute;
@@ -128,11 +128,11 @@ export default {
       transform: translateY(-50%);
       text-align: center;
       width: 100%;
-      padding: 30px 60px;
+      padding: 1.875rem 3.75rem;
       line-height: 1.5;
       box-sizing: border-box;
       p {
-        font-size: 15px;
+        font-size: 0.938rem;
       }
     }
   }
@@ -146,8 +146,8 @@ export default {
 @media (min-width: map-get($grid-breakpoints, "lg")) {
   .quote-card {
     margin: 0 3rem;
-    width: 350px;
-    height: 300px;
+    width: 21.875rem;
+    height: 18.75rem;
   }
 }
 </style>

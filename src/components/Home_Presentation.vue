@@ -87,8 +87,8 @@ h1 {
   }
   span.cursor {
     display: inline-block;
-    margin-left: 3px;
-    width: 4px;
+    margin-left: 0.188rem;
+    width: 0.25rem;
     background-color: $blue;
     animation: cursorBlink 1s infinite;
   }

@@ -61,7 +61,7 @@ export default {
   max-width: 70vw;
   text-align: left;
   justify-content: center;
-  border-radius: 2px;
+  border-radius: 0.125rem;
   box-sizing: border-box;
   background-color: white;
   margin: 2rem 0;

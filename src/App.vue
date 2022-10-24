@@ -38,9 +38,9 @@
 
   a {
     color: white;
-    padding: 10px;
+    padding: 0.625rem;
     background-color: $blue;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     font-weight: 900;
     text-decoration: none;
     cursor: pointer;
@@ -56,10 +56,10 @@
 
   button {
     color: white;
-    padding: 10px;
+    padding: 0.625rem;
     background-color: $blue;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     outline: none;
     text-decoration: none;
     cursor: pointer;
@@ -73,8 +73,8 @@
     font-weight: 900;
     border-radius: 50%;
     margin-bottom: 0;
-    font-size: 14px;
-    padding: 10px 12px;
+    font-size: 10.25rem;
+    padding: 0.625rem 10.125rem;
   }
 }
 
@@ -82,7 +82,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding: 1.875rem;
 
   a {
     font-weight: bold;
@@ -100,10 +100,10 @@
 }
 
 .container {
-  margin: 50px;
+  margin: 3.125rem;
 
   @media (min-width: map-get($grid-breakpoints, "lg")) {
-    margin: 0 100px;
+    margin: 0 6.25rem;
   }
 }
 
@@ -112,9 +112,9 @@
 }
 
 .copy-grey {
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   margin-top: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: rgb(141, 141, 141);
 }
 

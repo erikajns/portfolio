@@ -173,7 +173,7 @@ export default {
 
     a {
       margin-top: 1rem;
-      max-width: 300px;
+      max-width: 18.75rem;
     }
   }
 
@@ -187,7 +187,7 @@ export default {
     justify-content: center;
 
     hr {
-      border-width: 0.5px;
+      border-width: 0.031rem;
     }
 
     h2 {
@@ -206,7 +206,7 @@ export default {
       }
 
       &-contact div {
-        width: 350px;
+        width: 21.875rem;
         margin-right: 0.5rem;
       }
     }
@@ -251,7 +251,7 @@ export default {
 @media (min-width: map-get($grid-breakpoints, "md")) {
   .about-me {
     &__image {
-      max-width: 350px;
+      max-width: 21.875rem;
     }
   }
 }
@@ -266,7 +266,7 @@ export default {
     &__image {
       flex: 1;
       max-width: 26%;
-      margin-right: 90px;
+      margin-right: 5.625rem;
     }
     &__buttons {
       flex-direction: row;
@@ -274,7 +274,7 @@ export default {
       a {
         margin-top: 1rem;
         margin-right: 1rem;
-        max-width: 350px;
+        max-width: 21.875rem;
       }
     }
 
@@ -288,7 +288,7 @@ export default {
         margin: 0 auto 2rem;
 
         &__info {
-          width: 430px;
+          width: 41.875rem;
         }
       }
     }

@@ -54,14 +54,14 @@ form {
     outline: none;
     margin: 0;
     width: 100%;
-    font-size: 14px;
-    padding: 16px;
+    font-size: 0.875rem;
+    padding: 1rem;
     margin-bottom: 2rem;
-    border: 1px solid #e1e1e1;
+    border: 0.063rem solid #e1e1e1;
   }
 
   textarea {
-    height: 100px;
+    height: 6.25rem;
     font-family: Muli, sans-serif;
   }
 

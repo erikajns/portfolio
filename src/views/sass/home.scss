@@ -10,12 +10,12 @@
   }
 
   &__key-knowledge{
-    margin-top: 30px;
+    margin-top: 1.875rem;
     h3 {
       color: $pink;
     }
     td{
-      padding: 0 15px 0 0;
+      padding: 0 0.938rem 0 0;
       width: calc(100% / 3);
     }
   }
@@ -24,7 +24,7 @@
 @media (min-width: map-get($grid-breakpoints, "md")) {
   .home {
     &__image {
-      max-width: 350px;
+      max-width: 21.875rem;
     }
   }
 }
@@ -34,7 +34,7 @@
       flex-direction: row;
     &__welcome {
       flex: 1;
-      margin-right: 50px;
+      margin-right: 3.125rem;
       max-width: 50%;
       margin-top: 10%;
     }

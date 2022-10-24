@@ -67,20 +67,20 @@ export default {
 @import "./../variables.scss";
 
 .experience-card {
-  width: 250px;
-  height: 400px;
-  border-radius: 4px;
+  width: 15.63rem;
+  height: 25rem;
+  border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
   &__overlay {
     background-color: rgba(25, 25, 25, 0.5);
-    border-radius: 4px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
     color: white;
     height: 100%;
     transition: 0.4s;
@@ -88,19 +88,19 @@ export default {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
   }
 }
 
 @media (min-width: map-get($grid-breakpoints, "md")) {
   .experience-card {
-    width: 300px;
+    width: 18.75rem;
   }
 }
 
 @media (min-width: map-get($grid-breakpoints, "xxl")) {
   .experience-card {
-    width: 350px;
+    width: 21.875rem;
   }
 }
 </style>
