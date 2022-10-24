@@ -51,7 +51,7 @@ export default {
   }
 
   h1 {
-      font-family: Bree Serif;
+      font-family: 'Bree Serif', serif;
     }
 }
 

@@ -15,18 +15,10 @@
 
 <style lang="scss">
 @import "variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Mulish:wght@500&display=swap');
 
 #app {
-  @font-face {
-    font-family: "Bree Serif";
-    font-weight: 400;
-    font-style: normal;
-    font-display: auto;
-    unicode-range: U+000-5FF;
-    src: local("Bree"), url("/fonts/Bree/BreeSerif-Regular.woff") format("woff");
-  }
-
-  font-family: Muli, sans-serif;
+  font-family: 'Mulish', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

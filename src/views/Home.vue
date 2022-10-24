@@ -859,7 +859,7 @@ export default {
   margin-bottom: 3rem;
 
   &__name {
-    font-family: Bree Serif;
+    font-family: 'Bree Serif', serif;
     font-weight: 400;
     font-size: 3rem;
     margin: 0;

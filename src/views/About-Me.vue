@@ -161,7 +161,7 @@ export default {
 
   &__general-information {
     h1 {
-      font-family: Bree Serif;
+      font-family: 'Bree Serif', serif;
       font-weight: 400;
     }
   }
@@ -192,7 +192,7 @@ export default {
 
     h2 {
       font-size: 3.2rem;
-      font-family: Bree Serif;
+      font-family: 'Bree Serif', serif;
       font-weight: 400;
     }
 
@@ -230,7 +230,7 @@ export default {
         &-number h2 {
           font-size: 3.5rem;
           margin: 0;
-          font-family: Bree Serif;
+          font-family: 'Bree Serif', serif;
           font-weight: 400;
           color: white;
         }
