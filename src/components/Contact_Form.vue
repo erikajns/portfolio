@@ -4,6 +4,7 @@
     <input type="email" name="user_email" placeholder="Email" />
     <textarea name="message" placeholder="Message"></textarea>
     <input type="submit" value="Send" class="submit-button" />
+    <p v-if="success" class="grey-copy">The email was sent!</p>
   </form>
 </template>
 
@@ -12,6 +13,11 @@ import emailjs from "@emailjs/browser";
 
 export default {
   name: "contact-form",
+  data: () => {
+    return {
+      success: false,
+    };
+  },
   methods: {
     /**
      * Function that connects to EmailJS and send the form data on submit
@@ -27,6 +33,8 @@ export default {
         .then(
           (result) => {
             console.log("SUCCESS!", result.text);
+            this.success = true;
+            this.$refs.form.reset();
           },
           (error) => {
             console.log("FAILED...", error.text);
@@ -73,6 +81,11 @@ form {
     border: none;
     font-weight: 700;
     font-size: 1rem;
+    cursor: pointer;
+
+    &:hover{
+      background-color: lighten($color: $main-yellow, $amount: 10%);
+    }
   }
 }
 
